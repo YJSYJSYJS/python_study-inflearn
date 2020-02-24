@@ -3,6 +3,8 @@
 
 while True:
     num = input("2 이상의 숫자를 입력하세요.> ")
+
+    # .isnumeric: 숫자인지 확인하는 메서드
     if not num.isnumeric():
         continue
     num = int(num)
