@@ -20,11 +20,11 @@ print(content)
 # ---with문 사용----
 # as 뒤가 변수
 # with문을 빠져나오면 file이 사라지므로 따로 .close해줄 필요 없다.
-with open("sample.txt", mode = "r", enconding = "utf-8") as file:
+with open("sample.txt", mode = "r", encoding = "utf-8") as file:
     print(file.read())
 
 # 두 개의 파일을 다른 형식으로 열어서 동시에 읽고 쓰기를 할 수 있다.
-with open("sample.txt", mode = "r", enconding = "utf-8") as s, open("sample2.txt", mode = "w", encoding="utf-8") as t:
+with open("sample.txt", mode = "r", encoding = "utf-8") as s, open("sample2.txt", mode = "w", encoding="utf-8") as t:
     t.write(s.read().replace("python", "파이썬"))
 # \를 사용하면 한줄 띄워서 가능
 # with open("sample.txt", mode = "r", enconding = "utf-8") as s, \ 
