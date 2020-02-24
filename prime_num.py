@@ -12,7 +12,7 @@ while True:
         continue
     break
 
-# 에라토스테네스의 체(sieve of Eratosthenes)
+# -----에라토스테네스의 체(sieve of Eratosthenes)-----
 # isprime = True
 # for n in range(2, num):
 #     if num % n == 0:
@@ -22,6 +22,7 @@ while True:
 #     print("{} is prime number".format(num))
 # else:
 #     print("{} is not prime number".format(num))
+# --------------------------------------------------
 
 # 순차적으로 발견되는 소수의 배수들을 미리 제거해서 효율 증가
 prime_list = [False, False] + [True] * (num-1)
